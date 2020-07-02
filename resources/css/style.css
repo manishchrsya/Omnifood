@@ -1,0 +1,537 @@
+/*.......orange==#e67e22.......*/
+
+
+/*............................................................*/
+/*.......................Basic Setup............................*/
+/*............................................................*/
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+html{
+	background-color: #fff;
+	color: #555;
+	font-family: 'lato' , 'arial';
+	font-weight: 300;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+}
+
+/*............................................................*/
+/*.......................Reusible components............................*/
+/*............................................................*/
+
+
+.row {
+	max-width: 1140px;
+	margin: 0 auto;
+	
+}
+.section-features{
+	padding: 80px,0;
+	height: 85vh;
+}
+.details{
+	width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+}
+.box{
+	padding: 1%;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+
+/*.......Headings..........*/
+
+h1,h2,h3{
+		
+		font-weight: 300;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+}
+h1{
+	color: #fff;
+	font-size: 240%;
+	word-spacing: 4px;
+	margin-bottom: 20px;
+}
+h2{
+	font-size: 180%;
+	word-spacing: 3px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+h3{
+	font-size: 110%;
+	margin-bottom: 15px;
+
+
+}
+h2:after{
+	display: block;
+	height: 2px;
+	background-color: #e67e22;
+	content: " ";
+	width: 100px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+/*.......paragraphs..........*/
+
+.long-copy{
+	line-height: 145%;
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 20px;
+}
+
+.box p{
+	font-size: 90%;
+	line-height: 145%;
+}
+
+
+/*.......icons..........*/
+
+.box ion-icon{
+	font-size: 70px;
+	color: #e67e22;
+	margin-bottom: 20px;
+}
+
+.btn-app a img{
+	height: 54px;
+	width: auto;
+}
+
+.city-description-1 ion-icon{
+	font-size: 20px;
+	color: #e67e22;
+	margin-right: 10px;
+}
+
+/*.......Buttons..........*/
+
+.btn,
+.submit-btn{
+	display: inline-block;
+	padding: 10px 30px;
+	font-weight: 300px;
+	text-decoration: none;
+	border-radius: 200px;
+	color: #fff;
+	transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full,
+.submit-btn{
+	border: 1px solid #e67e22; 
+	background-color: #e67e22;
+}
+
+.btn-ghost{
+	border: 1px solid #e67e22;
+	color: #e67e22;
+}
+
+.btn:hover{
+	background-color: #bf6516;	
+}
+
+.btn-full:hover,
+.btn-full:active{
+	border: 1px solid #bf6516; 
+	background-color: #bf6516;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+	border: hover1px solid #e67e22;
+	color: #fff;
+}
+
+
+/*............................................*/
+/*..................Header...................*/
+/*............................................*/
+header{
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img/hero.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+.hero-text-box{
+	position: absolute;
+	width: 1140px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.logo{
+	height: 100px;
+	width: auto;
+	float: left;
+	margin-top: 20px;
+}
+.main-nav{
+	float: right;
+	list-style: none;
+	margin-top: 55px;
+}
+.main-nav li{
+	display: inline-block;
+	margin-left: 40px;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+	padding: 8px 0;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 90%;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+	border-bottom: 1px solid #e67e22;
+}
+
+
+/*............................................*/
+/*..................Meals...................*/
+/*............................................*/
+
+
+.meal-showcase{
+	list-style: none;
+	width: 100%;
+	display: flex;
+
+}
+
+.meal-showcase li{
+	width: 25%;
+	height: auto;
+}
+.meal-photo{
+	width: 100%;
+	overflow: hidden;
+	background-color: #000;
+}
+.meal-photo img{
+	opacity: 0.7;
+	width: 100%;
+	height: auto;
+	transform: scale(1.2);
+	transition: transform 0.5s,opacity 0.5s;
+	cursor: pointer;
+}
+.meal-photo img:hover{
+	transform: scale(1.04);
+	opacity: 1;
+}
+
+/*............................................*/
+/*..................How it works..................*/
+/*............................................*/
+
+
+.section-steps{
+	background-color: #f4f4f4;
+	padding: 20px;
+}
+
+.steps-box{
+	display: flex;
+	max-width: 900px;
+	margin-left: auto;
+	margin-top: 70px;	
+}
+.box-1{
+	display: flex;
+	flex-direction: column;
+	margin-right: 5%;
+}
+.app-screen{
+	width: 200px;
+	height: auto;
+}
+.works-step{
+	margin-top: 30px;
+	margin-right: 20px;
+	display: flex;
+	flex-direction: row;
+}
+.works-step div{  /*This need to be corrected as the number box size is not mentained */
+	color: #e67e22;
+	font-size: 150%;
+	/*border: 2px solid #e67e22;*/
+	height: 50px;
+	width: 50px;
+
+}
+.works-step p{
+	line-height: 140%;
+}
+.btn-app{
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+
+/*............................................*/
+/*..................Working cities...................*/
+/*............................................*/
+
+
+.section-cities{
+	margin-top: 50px;
+	width: 1140px;
+	margin: 0 auto;
+	margin-bottom: 80px;
+}
+
+.active-cities{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 60px;
+}
+.city > h3{
+	margin-top: 12px;
+}
+.city > img{
+	height: 170px;
+	width: auto;
+}
+.city-description{
+	list-style: none;
+}
+.city-description-1{
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	margin-bottom: 8px;
+}
+.city-description-1 a{
+	color: #e67e22;
+}
+
+
+
+/*............................................*/
+/*..................Customer Testimonial...................*/
+/*............................................*/
+
+.customer-testimonial{
+	height: 80vh;
+	padding-top: 20px;
+	background-color: #000;
+	color: #fff;
+	background-image: url(img/back-customers.jpg);
+}
+.customer-testimonial-box{
+	width: 1140px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content:space-between;
+}
+.indivisual-customer-box{
+	max-width: 330px;
+}
+
+.indivisual-customer-box > p{
+	font-size: 80px;
+}
+.customer-review{
+	/*color: #fff;*/
+}
+.customer-details{
+	display: flex;
+}
+.customer-details > img{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	margin-right: 10px;
+	margin-top: 15px;
+
+}
+.customer-details > p{
+	margin-top: 22px;
+}
+
+
+/*............................................*/
+/*..................pack selection...................*/
+/*............................................*/
+
+.pack-selection{
+	height: 100vh;
+	background-color: #f4f4f4;
+	padding-top: 20px;
+}
+.pack-selection-box{
+	width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-around;
+}
+.plan-box{
+	width: 330px;
+	padding: 5px;
+	margin-top: 20px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 2px 2px #efefef; 
+}
+.plan-box-1{
+	height: 170px;
+	border-bottom: 1px solid #bfbfbf;
+	margin-left: 10px;
+}
+.plan-price{
+	font-size: 300%;
+	font-weight: 100;
+	color: #e67e22;
+}
+.plan-price span{
+	font-size: 50%;
+	font-weight: 100;
+	color: #000;
+}
+.plan-price-meal{
+	font-size: 85%;
+	margin-left: 5px;
+	margin-top: 10px;
+}
+.plan-box-2{
+	height: 140px;
+	border-bottom: 1px solid #bfbfbf;
+}
+.plan-box-2 > ul{
+	margin-left: 15px;
+	list-style: none;
+	margin-top: 5px;
+}
+.plan-box-2 > ul> li{
+	margin-bottom: 8px;
+}
+.plan-box-2 > ul> li> ion-icon{
+	font-size: 70%;
+	margin-left: 5px;
+	color: #e67e22;
+	margin-right: 10px;
+	margin-top: 3px;
+}
+
+.plan-box-3{
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	
+}
+
+
+/*............................................*/
+/*..................User Registration...................*/
+/*............................................*/
+
+
+.registration-section{
+	padding-top: 20px;
+}
+
+.contact-form{
+	width: 60%;
+	margin: 0 auto;
+	padding-top: 40px;
+	display: flex;
+	flex-direction: column;
+}
+.sub-row{
+	display: flex;
+	justify-content: flex-start;
+}
+.column-1{
+	width: 35%;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	margin-right: 50px;
+	margin-left: 50px;
+	
+}
+.column-2{
+	width: 65%;
+	margin-bottom: 20px;
+	margin-left: 50px;
+	margin-left: 50px;
+}
+
+input[type=text],
+input[type=email],
+textarea{
+	width: 100%;
+	padding: 10px;
+	border-radius: 3px;
+	font-size: 80%;
+}
+select{
+	width: 70%;
+	padding: 7px;
+	border-radius: 3px;
+	background-color: #f0eded;
+}
+textarea{
+	height: 80px;
+	font-size: 80%;
+}
+
+
+/*............................................*/
+/*..................Footer...................*/
+/*............................................*/
+
+
+footer{
+	border-top: 1px solid;
+	background-color: #212121;
+	min-height: 30vh;
+	display: flex;
+	flex-direction: column;
+}
+.footer-main-content{
+	flex: 1;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.left-body a{
+	text-decoration: none;
+	margin-right: 15px;
+	color: #c9c7c7;
+}
+.right-body ion-icon{
+	margin-left: 10px;
+	font-size: 130%;
+	color: #c9c7c7;
+	cursor: pointer;
+}
+.footer-sub-content{
+	flex: 1;
+	text-align: center;
+	color: #edebeb;
+}
